@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> RADIS</title>
+
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Here is The NAVIGATION BAR -->
+<nav class="topnav" id="myTopnav">
+  <a href="#part1" class="active">RADIS</a>
+  <a href="#part2">Products</a>
+  <a href="#part3">About Us</a>
+  <a href="#part4">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+
+
+
+<!-- Here is The main Background Image added by CSS -->
+<div id='part1' class="myheader">
+</div>
+
+
+<div id="part2" class="photoAlbume"> 
+  <div class="albumeHeader">
+    <h1>Products</h1><hr>
+  </div>
+ 
+  <!-- Images used to open the lightbox -->
+  <div class="row">
+    <div class="column">
+      <img src="./assets/1.PNG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./assets/2.PNG" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./assets/3.PNG" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./assets/4.PNG" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./assets/5.PNG" onclick="openModal();currentSlide(5)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./assets/6.PNG" onclick="openModal();currentSlide(6)" class="hover-shadow">
+    </div>
+  </div>
+  <div class="btnContainer">
+    <button class='btn' type="button">More</button>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="./assets/1.PNG" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="./assets/2.PNG" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="./assets/3.PNG" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="./assets/4.PNG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="./assets/5.PNG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="./assets/6.PNG" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="./assets/1.PNG" onclick="currentSlide(1)" alt="Radis">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./assets/2.PNG" onclick="currentSlide(2)" alt="Radis">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./assets/3.PNG" onclick="currentSlide(3)" alt="Radis">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./assets/4.PNG" onclick="currentSlide(4)" alt="Radis">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="./assets/5.PNG" onclick="currentSlide(5)" alt="Radis">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="./assets/6.PNG" onclick="currentSlide(6)" alt="Radis">
+      </div>
+    </div>
+  </div>
+
+<div id='part3' class="about">
+    <div class="aboutHeader">
+      <h1>About Us</h1><hr>
+    </div>
+    <div class="aboutContent"> 
+      <div class="aboutimage">
+        <img src="./assets/about.jpg" alt="your favorite photo" />
+      </div>
+      <div class="aboutText">
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nemo
+            esse eveniet molestias quidem animi sed quis eaque blanditiis dolores
+            deleniti atque repellat obcaecati in commodi, iste, nulla dolorum consequatur!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nemo
+            esse eveniet molestias quidem animi sed quis eaque blanditiis dolores
+            deleniti atque repellat obcaecati in commodi, iste, nulla dolorum consequatur!</p> 
+      </div>
+    </div>
+  </div>
+  
+
+    
+ 
+
+  <div id='part4' class="myfooter">
+    <div class="footerHeader">
+      <h2>Contact Us</h2><hr>
+    </div>
+    <div class="footerContainer">
+      <div>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2214.594560228446!2d49.995795652598304!3d37.212951662153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ff54b167163bfe1%3A0x529a3df63b7955a4!2sGilan%20Province%2C%20Lahijan%2C%20Jomhouri%20St%2C%20Iran!5e0!3m2!1sen!2s!4v1586075018708!5m2!1sen!2s" 
+            width="350px" height="200px"
+            frameborder="0" style="border:0;" 
+            allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="mySocial">
+        <p>Radis in Social Media</p>
+        <p class="socialmedia">
+          <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+          <a href="https://www.Telegram.com" class="fa fa-telegram"></a>
+        </p>
+      </div>
+      <div class="myAddress">
+        <p>Address: Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Maxime, rem sit, ex natus illt aliquam illum ea hic!</p>
+        <p>Phone Number: 0123-4567890</p>
+        <p>Fax: 102-3456789</p>
+      </div>
+     </div>
+     <footer> All rights reserved to Milad Rastin.</footer>
+  </div>
+
+
+<script src="./index.js"></script>
+
+</body>
+</html>
+
